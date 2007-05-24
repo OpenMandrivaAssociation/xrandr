@@ -1,9 +1,10 @@
 Name: xrandr
 Version: 1.2.0
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Primitive command line interface to RandR extension
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source1: http://troumad.info/Linux/xrandr.1x.bz2
 License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
@@ -29,12 +30,17 @@ RandR extension.
 rm -rf %{buildroot}
 %makeinstall_std
 
+mkdir -p %{buildroot}%{_mandir}/fr/man1/
+install -m 0644 %{SOURCE1} %{buildroot}%{_mandir}/fr/man1/
+
 %clean
 rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
 %{_bindir}/xrandr
+%defattr(-,root,man)
 %{_mandir}/man1/xrandr.1x.bz2
+%{_mandir}/fr/man1/xrandr.1x.bz2
 
 
