@@ -14,8 +14,9 @@ BuildRequires: libxrender-devel >= 0.9.0.2
 BuildRequires: x11-util-macros >= 1.0.1
 
 %description
-Xrandr is used to set the screen size, orientation and/or reflection using the
-RandR extension.
+Xrandr is a command line application used to set the screen size,
+orientation, reflection and/or the active display(s) using the RandR
+extension.
 
 %prep
 %setup -q -n %{name}-%{version}
