@@ -1,8 +1,8 @@
 Name: xrandr
 Version: 1.2.1
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Primitive command line interface to RandR extension
-Group: Development/X11
+Group: System/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 Source1: http://troumad.info/Linux/xrandr.1x.bz2
 License: MIT
