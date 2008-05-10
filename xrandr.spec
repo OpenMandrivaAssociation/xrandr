@@ -42,4 +42,4 @@ rm -rf %{buildroot}
 %{_bindir}/xrandr
 %defattr(-,root,man)
 %{_mandir}/man1/xrandr.1.*
-%{_mandir}/fr/man1/xrandr.1.*
+%lang(fr) %{_mandir}/fr/man1/xrandr.1.*
