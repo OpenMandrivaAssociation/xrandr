@@ -1,6 +1,6 @@
 Name: xrandr
-Version: 1.2.3
-Release: %mkrel 2
+Version: 1.2.99.3
+Release: %mkrel 1
 Summary: Primitive command line interface to RandR extension
 Group: System/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -30,6 +30,8 @@ extension.
 %install
 rm -rf %{buildroot}
 %makeinstall_std
+# (cg) NB Until we package nickle and cairo-5c (that works) kill this.
+rm -f %{buildroot}/%{_bindir}/xkeystone
 
 mkdir -p %{buildroot}%{_mandir}/fr/man1/
 install -m 0644 %{SOURCE1} %{buildroot}%{_mandir}/fr/man1/
@@ -40,6 +42,7 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_bindir}/xrandr
+#%{_bindir}/xkeystone
 %defattr(-,root,man)
 %{_mandir}/man1/xrandr.1.*
 %lang(fr) %{_mandir}/fr/man1/xrandr.1.*
