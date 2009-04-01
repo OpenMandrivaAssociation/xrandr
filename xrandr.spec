@@ -1,5 +1,5 @@
 Name: xrandr
-Version: 1.2.99.4
+Version: 1.3.0
 Release: %mkrel 1
 Summary: Primitive command line interface to RandR extension
 Group: System/X11
