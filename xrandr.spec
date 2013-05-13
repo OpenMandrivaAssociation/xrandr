@@ -1,6 +1,6 @@
 Name:		xrandr
 Version:	1.4.0
-Release:	1
+Release:	2
 Summary:	Primitive command line interface to RandR extension
 Group:		System/X11
 URL:		http://www.x.org/wiki/Projects/XRandR
