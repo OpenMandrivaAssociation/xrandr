@@ -6,9 +6,9 @@ Group:		System/X11
 URL:		http://www.x.org/wiki/Projects/XRandR
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
-BuildRequires:	libx11-devel >= 1.0.0
-BuildRequires:	libxrandr-devel >= 1.1.0.2
-BuildRequires:	libxrender-devel >= 0.9.0.2
+BuildRequires:	pkgconfig(x11) >= 1.0.0
+BuildRequires:	pkgconfig(xrandr) >= 1.1.0.2
+BuildRequires:	pkgconfig(xrender) >= 0.9.0.2
 BuildRequires:	x11-util-macros >= 1.0.1
 
 %description
