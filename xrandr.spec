@@ -6,10 +6,10 @@ License:	MIT
 Group:		System/X11
 Url:		http://www.x.org/wiki/Projects/XRandR
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
-BuildRequires:	pkgconfig(x11) >= 1.0.0
-BuildRequires:	pkgconfig(xrandr) >= 1.1.0.2
-BuildRequires:	pkgconfig(xrender) >= 0.9.0.2
-BuildRequires:	x11-util-macros >= 1.0.1
+BuildRequires:	pkgconfig(x11)
+BuildRequires:	x11-proto-devel
+BuildRequires:	pkgconfig(xrender)
+BuildRequires:	x11-util-macros
 
 %description
 Xrandr is a command line application used to set the screen size,
