@@ -7,7 +7,7 @@ Group:		System/X11
 Url:		http://www.x.org/wiki/Projects/XRandR
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(x11)
-BuildRequires:	x11-proto-devel
+BuildRequires:	pkgconfig(xrandr)
 BuildRequires:	pkgconfig(xrender)
 BuildRequires:	x11-util-macros
 
