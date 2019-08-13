@@ -1,11 +1,11 @@
 Summary:	Primitive command line interface to RandR extension
 Name:		xrandr
-Version:	1.5.0
-Release:	2
+Version:	1.5.1
+Release:	1
 License:	MIT
 Group:		System/X11
 Url:		http://www.x.org/wiki/Projects/XRandR
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xrandr)
 BuildRequires:	pkgconfig(xrender)
@@ -17,16 +17,17 @@ orientation, reflection and/or the active display(s) using the RandR
 extension.
 
 %prep
-%setup -q
+%autosetup -p1
+
 %build
 %configure \
 	--x-includes=%{_includedir} \
 	--x-libraries=%{_libdir}
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 # (cg) NB Until we package nickle and cairo-5c (that works) kill this.
 rm -f %{buildroot}/%{_bindir}/xkeystone
@@ -35,4 +36,3 @@ rm -f %{buildroot}/%{_bindir}/xkeystone
 %{_bindir}/xrandr
 #%%{_bindir}/xkeystone
 %{_mandir}/man1/xrandr.1.*
-
