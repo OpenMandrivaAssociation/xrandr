@@ -1,6 +1,6 @@
 Summary:	Primitive command line interface to RandR extension
 Name:		xrandr
-Version:	1.5.1
+Version:	1.5.2
 Release:	1
 License:	MIT
 Group:		System/X11
@@ -9,7 +9,7 @@ Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xrandr)
 BuildRequires:	pkgconfig(xrender)
-BuildRequires:	x11-util-macros
+BuildRequires:	pkgconfig(xorg-macros)
 
 %description
 Xrandr is a command line application used to set the screen size,
@@ -34,5 +34,4 @@ rm -f %{buildroot}/%{_bindir}/xkeystone
 
 %files
 %{_bindir}/xrandr
-#%%{_bindir}/xkeystone
-%{_mandir}/man1/xrandr.1.*
+%doc %{_mandir}/man1/xrandr.1.*
