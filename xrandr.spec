@@ -1,11 +1,11 @@
 Summary:	Primitive command line interface to RandR extension
 Name:		xrandr
-Version:	1.5.2
-Release:	2
+Version:	1.5.3
+Release:	1
 License:	MIT
 Group:		System/X11
 Url:		https://www.x.org/wiki/Projects/XRandR
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
+Source0:	https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xrandr)
 BuildRequires:	pkgconfig(xrender)
