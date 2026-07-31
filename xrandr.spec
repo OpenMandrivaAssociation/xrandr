@@ -1,6 +1,6 @@
 Summary:	Primitive command line interface to RandR extension
 Name:		xrandr
-Version:	1.5.3
+Version:	1.5.4
 Release:	1
 License:	MIT
 Group:		System/X11
